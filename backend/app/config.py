@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     # Database
-    MONGODB_URL: str = "mongodb+srv://koutilyapande26:jOqs20D6MtjGdS1v@cluster0.6ldotxs.mongodb.net/recruiter_assist?retryWrites=true&w=majority"
+    MONGODB_URL: str = ""
     DATABASE_NAME: str = "recruiter_assist"
     
     # Security
@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     
     # AI/LLM
-    MISTRAL_API_KEY: str = "enXc7VLnNGPblWoYWxpgNINkuhusY8Fv"
+    MISTRAL_API_KEY: str = ""
     
     # CORS
     BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:3000"]
